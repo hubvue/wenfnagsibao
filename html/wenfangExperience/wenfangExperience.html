@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wenfangExperience</title>
+    <link rel="stylesheet" href="../../css/wenfangExperience/wenfangExperience.css">
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id="canvasId" width="500" height="420"></canvas>
+        <p class='wrapper-p'>模拟毛笔在右侧画布上写毛笔字</p>
+        <input type="button" value="清除" id="inp">
+        <div class="search">
+            <p class="search-text">请选择写入毛笔字的字体类型。</p>
+            <select class="search-textInp" id="searchInp">
+                <option value="楷书">楷书</option>
+                <option value="行书">行书</option>
+                <option value="篆书">篆书</option>
+                <option value="隶书">隶书</option>
+            </select>
+            <input type="button" value="搜索" id="btn">
+            <p class="search-notice"></p>
+        </div>
+        <div class="fontLunbo">
+            <div class="fontLunboImg" id="fontLunboImg">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <input type="button" value="下一个" id = next>
+        </div>
+    </div>
+
+    <script src="../../js/wenfangExperience/wenfangExperience.js"></script>
+    <script src="../../js/JS.js"></script>
+</body>
+</html>
