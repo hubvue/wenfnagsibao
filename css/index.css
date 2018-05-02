@@ -1,0 +1,207 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+li{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+body{
+    /* overflow:hidden; */
+}
+.wrapper{
+    width:100%;
+    height:800px;
+}
+.clear::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.leftBox{
+    float:left;
+    width:10%;
+    height:100%;
+    background-color:rgba(204,204,204,0.5);
+}
+.rightBox{
+    float:right;
+    width:10%;
+    height:100%;
+    background-color:rgba(204,204,204,0.5);
+}
+.contentBox{
+    height:100%;
+    margin-left:10%;
+    margin-right:10%;
+    background-image:url(../image/bg.png); 
+    background-size:100% 100%;
+    position:relative;
+}
+.contentBox-nav{
+    position:relative;
+    top:170px;
+    height:40px;
+    width:100%;
+}
+.contentBox-nav .contentBox-nav-Li{
+    width:18%;
+    height:100%;
+    margin-left:1.5%;
+    background-size:100% 100%;
+    position:relative;
+    cursor: pointer;
+    z-index: 2 ;  
+    transition: 0.5s;
+}
+.contentBox-nav .contentBox-nav-Li a{
+    display:inline-block;
+    width:100%;
+    height:100%;
+}
+.contentBox-nav-Li:hover{
+    border:3px solid #ccc;
+    border-radius:10px;
+}
+.content-nav-Liimage1{
+    background-image:url(../image/nav/wenfangjieshao.png);
+}
+.content-nav-Liimage2{
+    background-image:url(../image/nav/wenfangxinshang.png);
+}
+.content-nav-Liimage3{
+    background-image:url(../image/nav/wenfangqushi.png);
+}
+.content-nav-Liimage4{
+    background-image:url(../image/nav/wenfangtiyan.png);
+}
+.content-nav-Liimage5{
+    background-image:url(../image/nav/zhishitiaozhan.png);
+}
+.contentBox-nav-Li .contentBox-nav-Li-twoBox{
+    width:100%;
+    position:absolute;
+    display:none;
+    top:35px;
+    z-index:3;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.contentBox-nav-Li:hover > ul{
+    display:block;
+    /* border-bottom:3px solid #ccc; */
+    border-left:3px solid #ccc; 
+    border-right:3px solid #ccc; 
+}
+.contentBox-nav-Li .contentBox-nav-Li-twoBox .contentBox-nav-Li-twoBox-li{
+    width:100%;
+    height:30px;
+    border-bottom:3px solid #ccc;
+}
+.contentBox-nav-Li .contentBox-nav-Li-twoBox .contentBox-nav-Li-twoBox-li a:hover{
+    background-color:#aaa;
+}
+.contentBox-nav-Li .contentBox-nav-Li-twoBox .contentBox-nav-Li-twoBox-li  a{
+    text-decoration: none;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background-color:#bbb;
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    opacity:0.5;
+}
+.content-Middle{
+    width:90%;
+    height:350px;
+    position:absolute;
+    top:250px;
+    left:5%;
+    background-color:#bbb;
+    border-radius:20px;
+}
+.introduce{
+    width:40%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    margin-left:20px;
+    border-right: 3px solid #555; 
+    padding:10px;   
+}
+.introduce .introduce-p{
+    width:85%;
+    height:85%;
+    font-size:14.5px;
+    padding:10px;
+    color:#333;
+    text-indent:2em;
+    margin: 20px auto;
+    border-radius:20px;
+    background-color:#eee;
+    box-shadow: 0 0 5px #000;
+}
+.lunbo{
+    width:500px;
+    height:300px;
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    margin-right:40px;
+    overflow:hidden;
+    border-radius:10px;
+    border:0;
+    box-shadow:0 0 5px #000;
+}
+.lunbo .lunbo-content{
+    position:absolute;
+    left:0;
+    height:100%;
+    width:600%;
+}
+.lunbo .lunbo-content img{
+    width:16.66666666%;
+    height:100%;
+    float:left;
+}
+#iframe{
+    position:absolute;
+    top:230px;
+    width:100%;
+    height:430px;
+    /* border:1px solid red; */
+}
+.content-bottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:120px;
+    background-color:#ddd;
+}
+.content-bottom p{
+    width:100%;
+    height:34px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    text-align:center;
+    line-height:34px;
+    color:#777;
+}

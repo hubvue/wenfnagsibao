@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#fff;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+    /* background-color:red; */
+}
+#ceng{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:#000;
+    z-index:99;
+    opacity:0.5;
+}
+#ceng #btn{
+    width:150px;
+    height:40px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /* border:1px solid red; */
+    border-radius:10px;
+    background-color:#0000ff;
+    color:#fff;
+    font-size:30px;
+    text-align:center;
+    line-height:40px;
+    box-shadow: 0 0 10px #fff;
+    cursor:pointer;
+}
+.time{
+    width:100%;
+    height:50px;;
+    background-color:#000;
+    opacity:0.8;
+    position:fixed;
+    z-index:50;
+}
+.time span{
+    display:inline-block;
+    position:absolute;
+    right:50px;
+    width:100px;
+    height:100%;
+    background-color:#fff;
+    font-size:23px;
+    text-align:center;
+    line-height:50px;
+}
+.question{
+    display:inline-block;  
+    width:90%;
+    /* height:500px; */
+    margin:auto;
+    position:relative;
+    /* border:1px solid red; */
+    background-image:url(../../image/konwledgeChallenge/bg.jpg);
+    margin-top:50px;
+    margin-left:5%;
+}
+.question .question-content{
+    width:80%;
+    height:200px;
+    margin:30px auto;
+    /* border:1px solid red; */
+    position:relative;
+    padding:20px 20px 20px 30px;
+    border-bottom: 2px solid #999;
+}
+.question .question-content span{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    font-size:20px;
+    text-align:center;
+    line-height:30px;
+    font-weight:545;
+}
+.question .question-content .question-content-title{
+    position:absolute;
+    top:25px;
+    left:60px;
+    height:65px;
+    width:85%;
+    /* border:1px solid red; */
+}
+.question .question-content .question-content-choice{
+    width:85%;
+    height:50px;
+    /* border:1px solid red; */
+    position:absolute;
+    top:100px;
+    left:60px;
+    font-size:18px;
+    color:#666;
+}
+.question .question-content .question-content-choice input{
+    width:15px;
+    height:15px;
+    display:inline-block;
+    cursor:pointer;
+}
+.position1{
+    /* border:1px solid red; */
+    width:280px;
+    height:30px;
+    position:absolute;
+    top:0;
+    left:40px;
+}
+.position2{
+    /* border:1px solid red; */
+    width:280px;
+    height:30px;
+    position:absolute;
+    top:0;
+    left:320px;
+}
+.position3{
+    /* border:1px solid red; */
+    width:280px;
+    height:30px;
+    position:absolute;
+    top:50px;
+    left:40px;
+}
+.position4{
+    /* border:1px solid red; */
+    width:280px;
+    height:30px;
+    position:absolute;
+    top:50px;
+    left:320px;
+}
+.game-over{
+    width:100%;
+    height:50px;
+    background-color:#ccc;
+    position:relative;
+}
+.game-over #over{
+    width:100px;
+    height:40px;
+     border-radius:10px;
+    background-color:#3333ff;
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    box-shadow: 0 0 10px #000;
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+#error{
+    display:none;
+    width:300px;
+    height:150px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    border-radius:10px;
+    background-color:#ccc;
+}
+#error #seeError{
+    width:100px;
+    height:30px;
+    background-color:#333;
+    border:0;
+    box-shadow: 2px 2px 5px #000;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    margin-top:80px;
+    cursor:pointer;
+    color:#fff;
+    border-radius:5px;
+    font-size:16px;
+}
+#error #seeError:active{
+    box-shadow: 0 0 5px #000;
+}
+#error .sc{
+    width:200px;
+    height:50px;
+    /* border:1px solid red; */
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+    top:10px;
+    color:#333;
+    text-align:center;
+    line-height:50px;
+    font-size:30px;
+}
+#closeBtn{
+    width:30px;
+    height:30px;
+    background-image:url(../../image/wenfangEnjoy/closeBtn.png);
+    background-size:100% 100%;
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+}
+#disError{
+    display:none;
+    width:350px;
+    height:280px;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    background-color:#ccc;
+    border-radius:10px;
+    overflow:hidden;
+}
+#disError table{
+    width:100%;
+    border:1;
+    font-size:16px;
+    text-align:center;
+    margin:auto 0;
+    border-radius:10px;
+}
+#disError input{
+    width:100%;
+    height:30px;
+    cursor:pointer;
+    position:absolute;
+    bottom:0;
+    border-radius:3px;
+    font-size:18px;
+}

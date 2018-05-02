@@ -1,0 +1,173 @@
+#timeline .timeline-item:after,#timeline .timeline-item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body, html {
+    height: 100%
+}
+body {
+    background: #f9f9f9;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, tahoma, verdana;
+    line-height: 20px;
+    font-size: 14px;
+    color: #726f77;
+    -webkit-font-smoothing: antialiased;
+}
+img {
+    max-width: 100%
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: "Dosis", arial, tahoma, verdana;
+    font-weight: 600;
+}
+
+#timeline {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+#timeline:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #ccc;
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+#timeline:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%
+}
+#timeline .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+    background: #999;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    cursor:pointer;
+}
+#timeline .timeline-item .bi{
+    background-image:url(../../image/wenfangIntroduce/bi.jpg);
+    background-size:100% 100%;
+}
+#timeline .timeline-item .mo{
+    background-image:url(../../image/wenfangIntroduce/mo.jpg);
+    background-size:100% 100%;
+}
+#timeline .timeline-item .zhi{
+    background-image:url(../../image/wenfangIntroduce/zhi.jpg);
+    background-size:100% 100%;
+}
+#timeline .timeline-item .yan{
+    background-image:url(../../image/wenfangIntroduce/yan.jpg);
+    background-size:100% 100%;
+}
+#timeline .timeline-item .timeline-content {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /* opacity:0; */
+}
+#timeline .timeline-item .timeline-content .h2right {
+    padding: 15px;
+    /* background: #ee4d4d; */
+    background-image:url(../../image/wenfangIntroduce/0.gif);
+    background-size:100% 100%;
+    color: #fff;
+    margin: -20px -20px 0 -20px;
+    font-weight: 500;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+#timeline .timeline-item .timeline-content .h2left {
+    padding: 15px;
+    /* background: #ee4d4d; */
+    background-image:url(../../image/wenfangIntroduce/1.gif);
+    background-size:100% 100%;
+    color: #fff;
+    margin: -20px -20px 0 -20px;
+    font-weight: 500;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    text-align:right;
+}
+#timeline .timeline-item .timeline-content p{
+    height:0;
+    overflow:hidden;
+}
+#timeline .timeline-item .timeline-content.right {
+    float: right;
+}
+@media screen and (max-width: 768px) {
+    #timeline {
+    margin: 30px;
+    padding: 0;
+    }
+    #timeline:before {
+        left: 0;
+    }
+    #timeline .timeline-item .timeline-content {
+        width: 90%;
+        float: right;
+    }
+    #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+        left: 10%;
+        margin-left: -6px;
+        border-left: 0;
+        border-right: 7px solid #ee4d4d;
+    }
+    #timeline .timeline-item .timeline-icon {
+        left: 0;
+    }
+}

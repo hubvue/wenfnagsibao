@@ -1,0 +1,93 @@
+
+
+ .content {
+    color: #fff;
+    font-size: 20px;
+}
+.bg {
+    background: url(../image/main/loginIn.jpg);
+    height:750px;
+    text-align: center; 
+    line-height: 750px;
+}
+.bg-blur {
+    float: left;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.content-front {
+  position:absolute;
+  left: 10px;
+  right: 10px;
+  height:750px;
+}
+form {
+    position: relative;
+    box-sizing: border-box;
+    background-color:#bbb;
+    opacity:0.7;
+    padding:10px 75px 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #888888;
+    position:absolute;
+    width:400px;
+    height:300px;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0);
+
+}
+form h2{
+    position: relative;
+   right:30px;
+   left:90px;
+   padding:10px 50px 40px 50px;
+   background-image:url(../image/main/denglu1.png);
+   background-size:100% 100%;
+   height:10px;
+   width:50px;
+   margin: 10px; 
+
+}
+form p{
+    text-align:right;   
+}
+form input{
+    width:160px;
+    height:22px;
+    color:#999;
+}
+form .form-btn{
+   position: relative;
+   left:-24px;
+   top:20px;
+   /* padding:10px 30px 40px 30px; */
+    display:inline-block;
+    background-color:#777;
+    border-radius:6px;
+    width:250px;
+    height:25px;
+    border:0;
+    margin-left:80px;
+    cursor:pointer;
+    font-size:15px;
+    /* white-space:nowrap; */
+}
+form .font{
+    display:inline-block;
+    width:100%;
+    margin-top:35px;
+    font-size:13px;
+    color:#333;
+    text-align:right;
+    text-decoration:underline;
+    cursor: pointer;
+}

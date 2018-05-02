@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#fff;
+}
+#wrapper{
+    position:relative;
+    margin:15px auto;
+}
+.box{
+    float:left;
+    padding: 15px 0 0 15px;
+    cursor: pointer;
+}
+.box:hover{
+    filter:blur(1px);
+}
+.box .box-img{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:5%;
+    box-shadow: 0 0 5px #ccc;
+}
+.box .box-img img{
+    width:200px;
+}
+.layer{
+    position:fixed;
+    width:0;
+    height:0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background-color:rgba(0,0,0,0.3);
+    transition:1s;
+    border-radius:10%;
+    z-index:55;
+}
+.layer img{
+    width:60%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    border-radius:10%;    
+}
+#btn{
+    width:7%;
+    height:7%;
+    background-image:url(../../image/wenfangEnjoy/closeBtn.png);
+    background-size:100% 100%;
+    position:absolute;
+    right:30px;
+    top:10px;
+    cursor: pointer;
+
+}
+#ceng{
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0;
+    z-index:50;
+}
